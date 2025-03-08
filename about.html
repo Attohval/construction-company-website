@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTech Projects Limited</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="media/company-logo.png">
+</head>
+<body>
+    <header class="nav-bar">
+        <a class="logo" href="index.html"><img src="media/company-logo.png" alt="company-logo"></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active-page">About</a></li>
+            <li><a href="construction.html">Construction</a></li>
+            <li><a href="industrialSupply.html">Industrial Supply</a></li>
+            <li><a href="EIA.html">EIA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>  
+        </ul>
+    </header>
+
+    <div class="about-section">
+        <div class="about-card" id="about-card-1">
+            <h2>We are Proudly a Construction and Engineering Company in the World.</h2>
+            <p>VTech Projects Limited is an engineering and construction company in the World, on Earth. Since 2023, we have built a strong bond of trust with our clients and communities. We are committed to delivering quality projects and services that result in the company's acceptance as one of the leading engineering and construction firms in the World.</p>
+            <a class="about-btn" href="contact.html">Contact us</a>
+        </div>
+        <div class="about-card" id="about-card-2"></div>
+        <div class="about-card" id="about-card-3"></div>
+        <div class="about-card" id="about-card-4">
+            <h2>Our Mission and Values</h2>
+            <p><span>Vision Statement -</span> To set the standard and pace for construction and engineering services, while delivering projects that consistently meet international standards.</p>
+            <p><span>Our Mission:</span> To built value for the organization to become a unique and distint firm. To maintain the highest levels of professionalism, integrity, honesty, and fairness in our relationships with our suppliers, subcontractors, professional associates, and customers.</p>
+        </div>
+        <div class="about-card" id="about-card-5"></div>
+        <div class="about-card" id="about-card-6">
+            <p><span>Our Future</span> <br>
+            As we move into the future, VTech Projects Limited is better prepared now than ever before and will take its ventures beyond the design stage - creating a physical reality that can be touched and felt. Our responsibility to our clients, employees, and shareholders remains the principal focus of our operations and is defined by our corporate values.
+            </p>
+            <p><span>Corporate Values</span> <br>
+            At VTech Projects Limited, the principles supporting this philosphy are permanently ingrained in our corporate values. Having stood the best of time, transparency and good corporate governance remain our top agenda.</p>
+        </div>
+    </div>
+    <div class="our-services">
+        <h2>Our Services</h2> <br>
+        <a class="btn" href="construction.html">Construction</a>
+        <a class="btn" href="industrialSupply.html">Industrial Supply</a>
+        <a class="btn" href="EIA.html">EIA</a>
+    </div>
+    
+    <footer class="footer">
+        <div class="map-container">
+            <a href="https://maps.app.goo.gl/QXRKZUvviRdzcaLD9" target="_blank">
+                <img class="map" src="media/map.png" alt="">
+            </a>
+        </div>
+        <div class="contact-us">
+            <p class="Cta-head">Contact us</p><br>
+            <p class="address">Address</p>
+            <p>No1 Somewhere around the world, right from Earth</p><br>
+
+            <p class="contact">Contacts</p>
+            <p class="phone">+(234)-8068****71</p>
+            <p class="mail">example@gmail.com</p><br>
+
+            <p>Building trust and excellence in engineering and construction services.</p><br>
+
+            <div class="socials">
+                <img src="media/instagram.png" loading="lazy" alt="">
+                <img src="media/facebook (1).png" loading="lazy" alt="">
+                <img src="media/TIKTALK ICON.jpg" loading="lazy" alt="">
+                <img src="media/3670051.png" loading="lazy" alt="">
+                <img id="mail-me" src="media/mail..png" loading="lazy" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+    //     window.addEventListener ('scroll', () => {
+    //         const nav_scroll = document.querySelector('.nav-bar');
+    //         nav_scroll.classList.toggle('window-scroll', window.scrollY > 0);        
+    //     }
+    // );
+    </script>
+</body>
+</html>

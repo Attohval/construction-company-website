@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanjelo Projects Limited</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="media/company-logo.png">
+</head>
+<body>
+    <header class="nav-bar">
+        <a class="logo" href="index.html"><img src="media/company-logo.png" alt="company-logo"></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="construction.html">Construction</a></li>
+            <li><a href="industrialSupply.html">Industrial Supply</a></li>
+            <li><a href="EIA.html">EIA</a></li>
+            <li><a href="contact.html" class="active-page">Contact Us</a></li>  
+        </ul>
+    </header>
+
+    <div class="contact-section">
+        <div class="contact-card" >
+            <h1>Contact Us</h1>
+            <p>Welcome to the contact page of VTech Projects Limited. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident ut, itaque ratione praesentium optio. Feel free to reach out to us for any enquiry or collaborations. We look forward to hearing from you soon.</p>
+        </div>
+        <div class="contact-card">
+
+            <label class="label" for="fullname">Enter your fullname</label>
+            <input class="input" type="text" id="fullname" required>
+
+            <label class="label" for="email">Enter your email*</label>
+            <input class="input" type="text" id="email" required>
+            
+            <label class="label" for="input-message">Enter your message*</label>
+            <input class="input-message" type="text" id="input-message" >
+            <button class="Submit-btn">Submit</button>
+        </div>
+    </div>
+    <img class="contact-img" src="media/hw2wx5oc.png" alt="yellow-payloader-carrying-sand">
+    
+    <footer class="footer">
+        <div class="map-container">
+            <a href="https://maps.app.goo.gl/QXRKZUvviRdzcaLD9" target="_blank">
+                <img class="map" src="media/map.png" alt="">
+            </a>
+        </div>
+        <div class="contact-us">
+            <p class="Cta-head">Contact us</p><br>
+            <p class="address">Address</p>
+            <p>No1 Somewhere around the world, right from Earth</p><br>
+
+            <p class="contact">Contacts</p>
+            <p class="phone">+(234)-8068****71</p>
+            <p class="mail">example@gmail.com</p><br>
+
+            <p>Building trust and excellence in engineering and construction services.</p><br>
+
+            <div class="socials">
+                <img src="media/instagram.png" loading="lazy" alt="">
+                <img src="media/facebook (1).png" loading="lazy" alt="">
+                <img src="media/TIKTALK ICON.jpg" loading="lazy" alt="">
+                <img src="media/3670051.png" loading="lazy" alt="">
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+    //     window.addEventListener ('scroll', () => {
+    //         const nav_scroll = document.querySelector('.nav-bar');
+    //         nav_scroll.classList.toggle('window-scroll', window.scrollY > 0);        
+    //     }
+    // )
+    ;
+    </script>
+</body>
+</html>
