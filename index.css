@@ -7,13 +7,14 @@
     text-decoration: none;
     list-style: none;
     font-size: 10px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
 
 /*-------Typography-------*/
 h1{
     font-size: 4.2rem;
     color: #fff;
+    text-shadow: 0 2px 1px red;
 }
 
 h2{
@@ -29,7 +30,7 @@ p {
 }
 
 a{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: #24354F;
     font-weight: bold;
     background: none;
@@ -91,29 +92,6 @@ a:hover {
     transition: all 200ms ease;
 } */
 
-.to-top {
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    border: 0.2rem solid white;
-    background: #24354F;
-}
-.back-to-top {
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.2rem;
-    height: 3.2rem;
-    border: 0.2rem solid #000;
-    background: #fff;
-    position: fixed;
-    bottom: 5rem;
-    right: 5rem;
-    font-size: 3rem;
-    color: #24354F;
-
-}
 /*-----End of navigation styling-----*/
 
 .hero {
@@ -128,7 +106,7 @@ a:hover {
     width: 100%;
 }
   
-  .slide-track {
+.slide-track {
     display: flex;
     width: 200%;
     animation: scroll 8s linear infinite alternate-reverse;
@@ -199,6 +177,7 @@ a:hover {
     max-width: 34rem;
     min-width: 20rem;
     padding: 2rem;
+    border:0.1rem solid #fff;
     background: linear-gradient(rgba(.7,.7,.7,.7), rgba(.7,.7,.7,.7));
 }
 /*------End of Hero----------*/
@@ -208,8 +187,7 @@ a:hover {
     background: #E3E8F0;
     display: flex;
     flex-direction: column;
-    padding: 5rem;
-    
+    padding: 5rem; 
 }
 
 .section-two-card {
@@ -227,7 +205,6 @@ a:hover {
     flex-direction: column;
     padding: 1rem 2rem;
     gap: 2rem;
-
 }
 
 .mission-head {
@@ -262,7 +239,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: skyblue;
+    background-color: #E3E8F0;
     color: black;
 }
 
@@ -309,12 +286,12 @@ a:hover {
     background: #24354F;
     padding: 1rem;
     color: white;
-    transition: 300ms;
 }
 
 .s-t-card .btn:hover {
     background: #fff;
-    color: skyblue;
+    color: #24354F;
+    transition: all 500ms ease;
 }
 
 /*----End of section three----*/
@@ -336,6 +313,7 @@ a:hover {
 .map {
     width: 100%;
 }
+
 .contact-us {
     width: 40%;
     max-width: 45rem;
@@ -343,7 +321,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: skyblue;
+    color: #fff;
 }
 
 .socials {
@@ -362,8 +340,7 @@ a:hover {
 }
 
 .socials img:hover {
-    opacity: .4;
-
+    opacity: .7;
 }
 
 .socials #mail-me {
@@ -377,7 +354,7 @@ a:hover {
 }
 /*-----end of footer styling------*/
 
-/*----styling about page----*/
+/*----styling About Page----*/
 .about-section {
     width: 100%;
     padding: 10rem 0rem 5rem;
@@ -385,7 +362,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    background-color: skyblue;
+    background-color: #E3E8F0;
 }
 
 .about-card {
@@ -406,25 +383,27 @@ a:hover {
     background: #24354F;
     padding: 1rem;
     color: white;
-    transition: 500ms;
+    text-align: center;
 }
 
 .about-btn:hover {
+    opacity: .9;
     color: skyblue;
-    border: 0.1rem solid #24354F;
+    transition:all 500ms ease;
 }
+
 #about-card-2 {
     height: 40rem;
     background-image: url(media/about-img-1.png);
     background-position: center;
     background-size: cover;
 }
+
 #about-card-3 {
     height: 40rem;
     background-image: url(media/about-img-2.png);
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 #about-card-5 {
@@ -449,12 +428,12 @@ a:hover {
     margin-bottom:  2rem;
     border: none;
     color: white;
-    transition: 500ms;
 }
 
 .our-services .btn:hover {
     background: #24354F;
     color: #fff;
+    transition:all 500ms ease;
 }
 
 /*-----Construction page styling-----*/
@@ -646,24 +625,29 @@ a:hover {
 
 .contact-section {
     width: 100%;
-    max-width: 120rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     padding: 10rem 0rem 0rem;
-    background: #E3E8F0;
+    background-image: linear-gradient(rgba(0.7, 0.7, 0.7, 0.7), rgba(0.7, 0.7, 0.7, .7)), url(media/hw2wx5oc.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
 .contact-card h1 {
-    color: #24354F;
+    color: #E3E8F0;
+    text-shadow: 0 2px 1px #24354F;
 }
 
 .contact-card {
     width: 45%;
     max-width: 50rem;
     min-width: 36rem;
-    padding: 2rem 1rem 4rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -672,16 +656,21 @@ a:hover {
 .label {
     margin-top: 2rem;
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .input {
     height: 4rem;
     font-size: 1.6rem;
+    box-shadow: 0 4px 10px #24354F;
+    border: none;
 }
 
 .input-message {
     height: 8rem;
     font-size: 1.6rem;
+    box-shadow: 0 4px 5px #24354F;
+    border: 0.1rem solid #24354F;
 }
 
 .Submit-btn {
@@ -692,7 +681,8 @@ a:hover {
     border: none;
     margin-top: 1rem;
     cursor: pointer;
-    color: skyblue;
+    color: #fff;
+    font-weight: bold;
     background: #24354F;
 }
 
@@ -766,6 +756,7 @@ a {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
+
 #info-card-3 {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -914,9 +905,11 @@ a {font-size: 1.8rem;}
     padding:2rem 5rem;
     border-radius: 0;
 }
+
 .hero {
     padding: 10rem 1rem 1rem;
 }
+
 .hero-info {
     padding: 1rem;
 }
@@ -928,6 +921,7 @@ a {font-size: 1.8rem;}
 .section-two {
     padding: 1rem;
 }
+
 .section-three {
     padding: 1rem;
 }
@@ -937,11 +931,13 @@ a {font-size: 1.8rem;}
 }
 
 .footer {
-    padding: 5rem 1rem;
+    padding: 2rem 1rem 5rem;
 }
+
 .map {
     min-width: 30rem;
 }
+
 .contact-us {
     min-width: 30rem;
 }
@@ -958,6 +954,7 @@ a {font-size: 1.8rem;}
 .about-card {
     min-width: 31rem;
 }
+
 /*----construction page*/
 
 .construction-section 
@@ -978,13 +975,16 @@ a {font-size: 1.8rem;}
 .eia-section {
     padding: 5rem 1rem;
 }
+
 .industrial-section .i-s-card {
     min-width: 30rem;
 }
+
 /*-----EIA------*/
 .eia-section {
     padding: 10rem 0;
 }
+
 .eia-section .eia-card {
     min-width: 30rem;
 }
@@ -1002,13 +1002,17 @@ a {font-size: 1.8rem;}
 
 .contact-card {
     min-width: 31rem;
+    margin: 0;
 }
+
 .input {
     height: 4rem;
     font-size: 1.6rem;
 }
+
 .input-message {
-    height: 8rem;
+    height: 10rem;
     font-size: 1.6rem;
 }
+
 }
